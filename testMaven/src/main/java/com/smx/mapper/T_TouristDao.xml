@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smx.dao.T_TouristDao">
+
+
+    <insert id="register">
+        insert into T_TOURIST(T_NAME,T_PASS)values (#{t_name},#{t_pass})
+    </insert>
+    <select id="login" resultType="com.smx.model.T_Tourist">
+        SELECT * FROM T_TOURIST WHERE T_NAME=#{t_name} and T_PASS=#{t_pass}
+    </select>
+</mapper>

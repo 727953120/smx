@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TRecruitDao">
+    <select id="getTRecruits" resultType="com.smx.model.TRecruit">
+        select * from T_RECRUIT
+    </select>
+    <select id="getRecruit" resultType="com.smx.model.TRecruit">
+        select * from T_RECRUIT where R_ID=#{rid}
+    </select>
+</mapper>

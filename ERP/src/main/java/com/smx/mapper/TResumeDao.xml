@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TResumeDao">
+    <insert id="add">
+        insert into T_RESUME(RESUME_NAME, RESUME__SEX, RESUME__PHONE, RESUME__EMAIL, RESUME_AGE, RESUME_ADDRESS, RESUME_SALARYEXPECTATION, RESUME_EDUCATION, RESUME_EDUCATIONTIME, RESUME_COMPANY, RESUME_TIME, RESUME_POSITION, RESUME_EXPERIENCE, T_ID)
+        values (#{resumeName},#{resumeSex},#{resumePhone},#{resumeEmail},#{resumeAge},#{resumeAddress},#{resumeSalaryExpectation},#{resumeEducation},#{resumeEducationTime},#{resumeCompany},#{resumeTime},#{resumePosition},#{resumeExperience},#{rId})
+
+    </insert>
+    <update id="update">
+        update T_RESUME set RESUME_NAME=#{resumeName},RESUME__SEX=#{resumeSex},RESUME__PHONE=#{resumePhone},RESUME__EMAIL=#{resumeEmail},RESUME_AGE=#{resumeAge},RESUME_ADDRESS=#{resumeAddress},RESUME_SALARYEXPECTATION=#{resumeSalaryExpectation},RESUME_EDUCATION=#{resumeEducation},
+        RESUME_EDUCATIONTIME=#{resumeEducationTime},RESUME_COMPANY=#{resumeCompany},RESUME_TIME=#{resumeTime},RESUME_POSITION=#{resumePosition},RESUME_EXPERIENCE=#{resumeExperience} where RESUME_ID=#{resumeId}
+    </update>
+    <delete id="delete">
+        delete from T_RESUME where RESUME_ID=#{resumeId}
+    </delete>
+
+    <select id="getResume" resultType="com.smx.model.TResume">
+        select * from T_RESUME WHERE RESUME_ID=#{resumeId}
+    </select>
+    <select id="getAll" resultType="com.smx.model.TResume">
+        select * from T_RESUME
+    </select>
+</mapper>

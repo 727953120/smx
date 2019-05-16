@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TRecord2Dao">
+    <insert id="addRecord">
+        insert into T_RECORD2(RESUME_ID, R_ID,T_ID)VALUES (#{resumeId},#{rId},#{tId})
+    </insert>
+    <select id="getAll" resultType="com.smx.model.TRecord2">
+        select * from T_RECORD2 where T_ID=#{tId}
+    </select>
+</mapper>
