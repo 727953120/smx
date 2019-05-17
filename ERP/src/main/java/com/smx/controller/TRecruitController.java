@@ -23,4 +23,9 @@ public class TRecruitController {
     public String toIndex(){
         return "forward:getTRecruits";
     }
+    @RequestMapping("toRecruit")
+    public String toRecruits(HttpSession session){
+
+        return "recruit";
+    }
 }

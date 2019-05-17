@@ -19,7 +19,7 @@
 <body>
 <script src="js/jquery-3.1.0.js"></script>
 <c:if test="${sessionScope.recruitRecord!=null}">
-    <c:forEach items="${sessionScope.recruitRecord}" var="recruit">
+    <c:forEach items="${sessionScope.recruitRecord}" var="recruit" varStatus="i">
         <table>
             <tr>
                 <th>公司名</th>
@@ -42,6 +42,13 @@
                 <td>${recruit.rRequirements}</td>
             </tr>
         </table>
+        <c:if test="${sessionScope.seeRecord2[i.index].reState==0}">
+            <h3>未查看</h3>
+        </c:if>
+        <c:if test="${sessionScope.seeRecord2[i.index].reState==1}">
+            <h3>已查看，等待面试通知</h3>
+        </c:if>
+
     </c:forEach>
 </c:if>
 </body>

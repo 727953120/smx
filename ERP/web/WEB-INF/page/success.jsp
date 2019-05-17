@@ -23,7 +23,7 @@
 </div>
 <a href="toResume">个人简历</a>
 <a href="getAlreadyPost">已投递</a>
-<a href="">面试</a>
+<a href="getMyInterview?tid=${sessionScope.t.tid}">面试</a>
 <a href="">邮箱</a>
 <c:forEach items="${sessionScope.recruits}" var="recruit">
     <table>

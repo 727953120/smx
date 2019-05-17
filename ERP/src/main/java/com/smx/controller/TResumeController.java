@@ -62,6 +62,7 @@ public class TResumeController {
      TRecord2 tRecord2=new TRecord2();
      tRecord2.settId(tTourist.getTid());
       List<TRecord2> tRecord2List=tRecord2Service.getAll(tRecord2);//根据用户id找到所有的投递记录
+        System.out.println(tRecord2List);
         session.setAttribute("seeRecord2",tRecord2List);
       List<TRecruit> list=new ArrayList<TRecruit>();
       for(TRecord2 t:tRecord2List){//遍历记录得到招聘详细的id

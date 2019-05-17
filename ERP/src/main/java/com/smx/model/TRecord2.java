@@ -7,7 +7,7 @@ public class TRecord2 implements Serializable {
     private Integer rId;
     private Integer tId;
     private Integer resumeId;
-private Integer reState;
+    private Integer reState;
     public TRecord2() {
     }
 
@@ -53,18 +53,12 @@ private Integer reState;
 
     @Override
     public String toString() {
-        String state1="";
-        if(reState==0){
-            state1="未查看";
-        }else{
-            state1="已查看，等面试通知";
-        }
         return "TRecord2{" +
                 "reId=" + reId +
                 ", rId=" + rId +
                 ", tId=" + tId +
                 ", resumeId=" + resumeId +
-                ", state1=" + state1 +
+                ", reState=" + reState +
                 '}';
     }
 }
