@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.smx.dao.TRecruitDao">
+    <update id="update">
+        update T_RECRUIT set R_STATE=1
+    </update>
+    <update id="back">
+        update T_RECRUIT set R_STATE=0
+    </update>
+    <delete id="delete">
+        delete from T_RECRUIT where R_ID=#{rid}
+    </delete>
     <select id="getTRecruits" resultType="com.smx.model.TRecruit">
-        select * from T_RECRUIT
+        select * from T_RECRUIT WHERE R_STATE=1
     </select>
     <select id="getRecruit" resultType="com.smx.model.TRecruit">
         select * from T_RECRUIT where R_ID=#{rid}
     </select>
+    <select id="getTAll" resultType="com.smx.model.TRecruit">
+        select * from T_RECRUIT
+    </select>
+
 </mapper>

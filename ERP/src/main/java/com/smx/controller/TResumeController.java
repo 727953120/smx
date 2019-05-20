@@ -82,4 +82,5 @@ public class TResumeController {
         tResumeService.delete(tResume);
         return "forward:getAll";
     }
+
 }

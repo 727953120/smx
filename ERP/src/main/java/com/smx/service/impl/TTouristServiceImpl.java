@@ -24,4 +24,11 @@ public class TTouristServiceImpl implements TTouristService {
         }
         return ttouristDao.login(ttourist);
     }
+
+    public TTourist get(TTourist t_tourist) {
+        if(t_tourist==null){
+            return null;
+        }
+        return ttouristDao.get(t_tourist);
+    }
 }

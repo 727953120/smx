@@ -4,7 +4,16 @@
     <insert id="addRecord">
         insert into T_RECORD2(RESUME_ID, R_ID,T_ID)VALUES (#{resumeId},#{rId},#{tId})
     </insert>
+    <update id="update">
+        update T_RECORD2 set RE_STATE=1
+    </update>
     <select id="getAll" resultType="com.smx.model.TRecord2">
         select * from T_RECORD2 where T_ID=#{tId}
+    </select>
+    <select id="getInterviews" resultType="com.smx.model.TRecord2">
+        select * from T_RECORD2
+    </select>
+    <select id="get" resultType="com.smx.model.TRecord2">
+        select * from T_RECORD2 where RE_ID=#{reId}
     </select>
 </mapper>

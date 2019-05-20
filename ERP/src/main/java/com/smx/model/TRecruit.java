@@ -12,6 +12,18 @@ public class TRecruit implements Serializable {//招聘信息类
     private String rDepartment;
     private String rPosition;//职位
     private String rRequirements;//岗位要求
+    private Integer rState;
+
+    public TRecruit() {
+    }
+
+    public Integer getrState() {
+        return rState;
+    }
+
+    public void setrState(Integer rState) {
+        this.rState = rState;
+    }
 
     public String getrDepartment() {
         return rDepartment;
@@ -97,6 +109,7 @@ public class TRecruit implements Serializable {//招聘信息类
                 ", rDepartment='" + rDepartment + '\'' +
                 ", rPosition='" + rPosition + '\'' +
                 ", rRequirements='" + rRequirements + '\'' +
+                ", rState=" + rState +
                 '}';
     }
 }

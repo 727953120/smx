@@ -22,17 +22,21 @@
     <c:forEach items="${sessionScope.myInterview}" var="interview">
         <table>
             <tr>
+                <th>姓名</th>
                 <th>公司</th>
-                <th>时间</th>
                 <th>地点</th>
-                <th>面试者</th>
+                <th>时间</th>
+                <th>部门</th>
+                <th>职位</th>
                 <th>面试情况</th>
             </tr>
             <tr>
+                <td>${interview.TName}</td>
                 <td>${interview.ICompany}</td>
                 <td>${interview.IDate}</td>
                 <td>${interview.IPlace}</td>
-                <td>${sessionScope.t.tName}</td>
+                <td>${interview.IDepartment}</td>
+                <td>${interview.IPosition}</td>
                 <td>
                     <c:if test="${interview.IState==0}">
                         <a href="agree?IId=${interview.IId}">待面试，是否同意</a>

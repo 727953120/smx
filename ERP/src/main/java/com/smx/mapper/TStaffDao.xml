@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TStaffDao">
+    <insert id="add">
+        insert into T_STAFF( S_NAME, S_PASS, S_SEX, S_PHONE, S_EMAIL, S_BANKCARD, S_DATE, S_DEPARTMENT, S_POSITION)VALUES
+        (#{sName},#{sPass},#{sSex},#{sPhone},#{sEmail},#{sBankCard},#{sDate},#{sDepartment},#{sPosition})
+    </insert>
+    <update id="update">
+        update T_STAFF set S_NAME=#{sName}, S_PASS=#{sPass}, S_SEX=#{sSex}, S_PHONE=#{sPhone}, S_EMAIL=#{sEmail}, S_BANKCARD=#{sBankCard},  S_DEPARTMENT=#{sDepartment}, S_POSITION=#{sPosition},S_STATE=#{sState}
+        where S_ID=#{sId}
+    </update>
+    <select id="get" resultType="com.smx.model.TStaff">
+        select * from T_STAFF where S_ID=#{sId}
+    </select>
+    <select id="getAll" resultType="com.smx.model.TStaff">
+        select * from T_STAFF
+    </select>
+    <select id="login" resultType="com.smx.model.TStaff">
+        select * from T_STAFF WHERE S_NAME=#{sName} and S_PASS=#{sPass}
+    </select>
+</mapper>

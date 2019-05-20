@@ -25,4 +25,33 @@ public class TRecruitServiceImpl implements TRecruitService {
         }
         return null;
     }
+
+    public List<TRecruit> getAll() {
+        List<TRecruit> tRecruitList=tRecruitDao.getTAll();
+        if(tRecruitList!=null&&tRecruitList.size()!=0){
+            return tRecruitList;
+        }
+        return null;
+    }
+
+    public boolean update(TRecruit tRecruit) {
+        if(tRecruit!=null){
+            return tRecruitDao.update(tRecruit);
+        }
+        return false;
+    }
+
+    public boolean back(TRecruit tRecruit) {
+        if(tRecruit!=null){
+            return tRecruitDao.back(tRecruit);
+        }
+        return false;
+    }
+
+    public boolean delete(TRecruit tRecruit) {
+        if(tRecruit!=null){
+            return tRecruitDao.delete(tRecruit);
+        }
+        return false;
+    }
 }

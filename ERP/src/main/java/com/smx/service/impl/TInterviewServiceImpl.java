@@ -57,4 +57,11 @@ public class TInterviewServiceImpl implements TInterviewService {
         }
         return null;
     }
+
+    public TInterview getByReId(TInterview interview) {
+        if(interview!=null){
+            return tInterviewDao.getByReId(interview);
+        }
+        return null;
+    }
 }

@@ -9,7 +9,43 @@ public class TInterview implements Serializable {
     private Integer TId;
     private Integer IState;
     private String ICompany;
+    private String IDepartment;
+    private String IPosition;
+    private String TName;
+    private Integer reId;
     public TInterview() {
+    }
+
+    public Integer getReId() {
+        return reId;
+    }
+
+    public void setReId(Integer reId) {
+        this.reId = reId;
+    }
+
+    public String getTName() {
+        return TName;
+    }
+
+    public void setTName(String TName) {
+        this.TName = TName;
+    }
+
+    public String getIDepartment() {
+        return IDepartment;
+    }
+
+    public void setIDepartment(String IDepartment) {
+        this.IDepartment = IDepartment;
+    }
+
+    public String getIPosition() {
+        return IPosition;
+    }
+
+    public void setIPosition(String IPosition) {
+        this.IPosition = IPosition;
     }
 
     public String getICompany() {
@@ -69,6 +105,10 @@ public class TInterview implements Serializable {
                 ", TId=" + TId +
                 ", IState=" + IState +
                 ", ICompany='" + ICompany + '\'' +
+                ", IDepartment='" + IDepartment + '\'' +
+                ", IPosition='" + IPosition + '\'' +
+                ", TName='" + TName + '\'' +
+                ", reId=" + reId +
                 '}';
     }
 }

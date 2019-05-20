@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.smx.dao.TInterviewDao">
     <insert id="add">
-        insert into T_INTERVIEW(I_PLACE, I_DATE, T_ID,I_COMPANY) values (#{IPlace},#{IDate},#{TId},#{ICompany})
+        insert into T_INTERVIEW(I_PLACE, I_DATE, T_ID,I_COMPANY,I_DEPARTMENT,I_POSITION,T_NAME,RE_ID) values (#{IPlace},#{IDate},#{TId},#{ICompany},#{IDepartment},#{IPosition},#{TName},#{reId})
     </insert>
     <update id="update">
         update T_INTERVIEW set I_PLACE=#{IPlace},I_DATE=#{IDate},T_ID=#{TId},I_STATE=#{IState},I_COMPANY=#{ICompany} WHERE I_ID=#{IId}
@@ -18,5 +18,8 @@
     </select>
     <select id="get" resultType="com.smx.model.TInterview">
         SELECT * FROM T_INTERVIEW WHERE I_ID=#{IId}
+    </select>
+    <select id="getByReId" resultType="com.smx.model.TInterview">
+        SELECT * FROM T_INTERVIEW WHERE RE_ID=#{reId}
     </select>
 </mapper>

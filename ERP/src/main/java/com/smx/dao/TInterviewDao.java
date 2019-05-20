@@ -11,5 +11,6 @@ public interface TInterviewDao {
     List<TInterview> getAll();
     List<TInterview> getInterview(TInterview interview);
     TInterview get(TInterview interview);
+    TInterview getByReId(TInterview interview);
 
 }

@@ -1,9 +1,7 @@
 package com.smx.controller;
 
-import com.smx.model.TRecord2;
-import com.smx.model.TRecruit;
-import com.smx.model.TResume;
-import com.smx.model.TTourist;
+import com.smx.model.*;
+import com.smx.service.TInterviewService;
 import com.smx.service.TRecord2Service;
 import com.smx.service.TRecruitService;
 import com.smx.service.TResumeService;
@@ -22,6 +20,8 @@ public class TRecord2Controller {
     private TRecruitService tRecruitService;
     @Resource
     private TResumeService tResumeService;
+    @Resource
+    private TInterviewService interviewService;
     @RequestMapping("toChoose")
     public String toChoose(Integer rid, HttpSession session){
         TRecruit tRecruit=new TRecruit();
@@ -42,5 +42,32 @@ public class TRecord2Controller {
         tRecord2.settId(tTourist.getTid());
         tRecord2Service.addRecord(tRecord2);
         return "success";
+    }
+    @RequestMapping("getInterviewers")//得到所有的投递记录
+    public String getInterviewers(HttpSession session){
+       List<TRecord2> tRecord2List=tRecord2Service.getInterviews();
+       session.setAttribute("allRecord",tRecord2List);
+       return "allRecord";
+    }
+    @RequestMapping("check")
+    public String check(Integer reId,HttpSession session){
+        TRecord2 tRecord2=new TRecord2();
+        tRecord2.setReId(reId);
+        tRecord2Service.update(tRecord2);
+        TRecord2 tRecord21=tRecord2Service.get(tRecord2);
+        TInterview tInterview=new TInterview();
+        tInterview.setReId(tRecord21.getReId());
+        TInterview tInterview1=interviewService.getByReId(tInterview);
+        session.setAttribute("checkOneInterview",tInterview1);
+        TRecruit recruit=new TRecruit();
+        recruit.setRid(tRecord21.getrId());
+      TRecruit tRecruit=tRecruitService.getRecruit(recruit);
+      session.setAttribute("checkOneRecruit",tRecruit);
+        TResume tResume=new TResume();
+        tResume.setResumeId(tRecord21.getResumeId());
+        TResume tResume1=tResumeService.getResume(tResume);
+        session.setAttribute("checkOneResume",tResume1);
+
+        return "collectResume";
     }
 }
