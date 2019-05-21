@@ -24,13 +24,21 @@
 </div>
 <div>
     <label>部门管理</label>
-    <a href="getLink">查看部门</a>
+    <a href="getLink">部门分布</a>
     <a href="toCreateDepartment">新增部门</a>
-    <a href="">删除部门</a>
+    <a href="toDeleteDepartment">删除部门</a>
+    <a href="toCreatePosition">新增职位</a>
+    <a href="getAllPosition">查看职位</a>
+    <a href="toDeletePosition">删除职位</a>
 </div>
 <div>
     <label>员工管理</label>
     <a href="entry">员工入职</a>
+</div>
+<div>
+    <label>培训管理</label>
+    <a href="toTrain">培训记录</a>
+    <a href="toAddTrain">培训记录</a>
 </div>
 </body>
 </html>

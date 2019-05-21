@@ -6,14 +6,14 @@
         (#{sName},#{sPass},#{sSex},#{sPhone},#{sEmail},#{sBankCard},#{sDate},#{sDepartment},#{sPosition})
     </insert>
     <update id="update">
-        update T_STAFF set S_NAME=#{sName}, S_PASS=#{sPass}, S_SEX=#{sSex}, S_PHONE=#{sPhone}, S_EMAIL=#{sEmail}, S_BANKCARD=#{sBankCard},  S_DEPARTMENT=#{sDepartment}, S_POSITION=#{sPosition},S_STATE=#{sState}
+        update T_STAFF set S_NAME=#{sName}, S_PASS=#{sPass}, S_SEX=#{sSex}, S_PHONE=#{sPhone}, S_EMAIL=#{sEmail}, S_BANKCARD=#{sBankCard},S_STATE=#{sState}
         where S_ID=#{sId}
     </update>
     <select id="get" resultType="com.smx.model.TStaff">
         select * from T_STAFF where S_ID=#{sId}
     </select>
     <select id="getAll" resultType="com.smx.model.TStaff">
-        select * from T_STAFF
+        select * from T_STAFF where S_STATE=1
     </select>
     <select id="login" resultType="com.smx.model.TStaff">
         select * from T_STAFF WHERE S_NAME=#{sName} and S_PASS=#{sPass}

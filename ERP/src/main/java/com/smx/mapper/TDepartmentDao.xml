@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TDepartmentDao">
+    <insert id="add">
+        insert into T_DEPARTMENT(D_DEPARTMENT,D_DATE)values (#{dDepartment},#{dDate})
+    </insert>
+    <delete id="delete">
+        delete from T_DEPARTMENT where D_ID=#{dId}
+    </delete>
+    <select id="getAll" resultType="com.smx.model.TDepartment">
+        select * from T_DEPARTMENT
+    </select>
+</mapper>

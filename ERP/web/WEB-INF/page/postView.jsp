@@ -19,7 +19,7 @@
 <div>
     <form action="addView" method="post">
         地点<input type="text" name="IPlace" required>
-        时间<input type="text" name="IDate" required>
+        时间<input type="datetime-local" name="IDate" required>
         公司<input type="text" name="ICompany" required>
         姓名<input type="text" name="TName" value="${t1.tName}" required>
         部门<input type="text" name="IDepartment" value="${r1.rDepartment}" required>

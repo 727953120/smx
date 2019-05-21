@@ -1,6 +1,7 @@
 package com.smx.service;
 
 import com.smx.model.TStaff;
+import com.smx.model.TStaff1;
 
 import java.util.List;
 
@@ -10,4 +11,5 @@ public interface TStaffService {
     TStaff get(TStaff tStaff);
     List<TStaff> getAll();
     TStaff login(TStaff tStaff);
+
 }

@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.nio.channels.FileChannel;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -45,12 +47,11 @@ public class TStaffController {
         return "staffLogin";
    }
    @RequestMapping("myselfInformation")
-    public  String mySelfInformation(Integer sId, ModelMap map){
+    public  String mySelfInformation(Integer sId, HttpSession session){
         TStaff tStaff=new TStaff();
         tStaff.setsId(sId);
-       System.out.println(tStaff);
        TStaff tStaff1=tStaffService.get(tStaff);
-       map.addAttribute("staffInformation",tStaff1);
+      session.setAttribute("staffInformation",tStaff1);
        return "look";
    }
    @RequestMapping("toList")
@@ -58,6 +59,29 @@ public class TStaffController {
     List<TStaff> tStaffList=tStaffService.getAll();
     map.addAttribute("list",tStaffList);
     return "list";
-
+   }
+   @RequestMapping("updateStaff")
+    public String updateStaff(TStaff tStaff){
+        if(tStaff!=null){
+            tStaffService.update(tStaff);
+        }
+        return "err";
+   }
+   @RequestMapping("toUpdateStaff")
+    public String toUpdateStaff(){
+        return "staffUpdate";
+   }
+   @RequestMapping("updateStaffInformation")
+    public String updateStaffInformation(TStaff staff){
+       System.out.println(staff);
+        if(staff!=null){
+            tStaffService.update(staff);
+            return "forward:myselfInformation?sId="+staff.getsId();
+        }
+       return "err";
+   }
+   @RequestMapping("clock")
+    public String clock(){
+        return "doClock";
    }
 }

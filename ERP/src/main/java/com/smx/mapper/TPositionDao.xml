@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TPositionDao">
+    <insert id="add">insert into T_POSITION(P_NAME,D_ID) values (#{pName},#{dId})</insert>
+    <delete id="delete">delete from T_POSITION where P_ID=#{pId}</delete>
+    <select id="getAll" resultType="com.smx.model.TPosition">
+        select * from T_POSITION
+    </select>
+    <select id="getByDid" resultType="com.smx.model.TPosition">
+        select * from T_POSITION where D_ID=#{dId}
+    </select>
+</mapper>

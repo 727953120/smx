@@ -5,8 +5,16 @@ import java.io.Serializable;
 public class TDepartment implements Serializable {
     private Integer dId;
     private String dDepartment;
-
+    private String dDate;
     public TDepartment() {
+    }
+
+    public String getdDate() {
+        return dDate;
+    }
+
+    public void setdDate(String dDate) {
+        this.dDate = dDate;
     }
 
     public Integer getdId() {
@@ -30,6 +38,7 @@ public class TDepartment implements Serializable {
         return "TDepartment{" +
                 "dId=" + dId +
                 ", dDepartment='" + dDepartment + '\'' +
+                ", dDate='" + dDate + '\'' +
                 '}';
     }
 }

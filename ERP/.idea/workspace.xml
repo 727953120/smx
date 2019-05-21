@@ -10,44 +10,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17f274a2-f090-414d-862e-344ab92fcf8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/controller/TStaffController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaffDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaffDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TStaffService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TStaffServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/allRecord.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/collectResume.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/collectView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/employ.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/newRecruit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/postView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/showStaff.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/controller/linkageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TDepartmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TPositionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaff1Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TTrainDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TDepartmentDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TPositionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaff1Dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TTrainDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/model/TStaff1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/model/TTrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/Staff1Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TDepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/Staff1ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TDepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TPositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/allDepartments.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/createDepartment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/createPosition.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/deleteDepartment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/deletePosition.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/doClock.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/err.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/look.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/lookPositions.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/seeDepartmentAndPosition.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/showDepartment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/staffLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/staffMain.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/staffUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/controller/TInterviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/controller/TInterviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/controller/TRecord2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/controller/TRecord2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/controller/TRecruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/controller/TRecruitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/controller/TResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/controller/TResumeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/dao/TInterviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TInterviewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/dao/TRecord2Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TRecord2Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/dao/TRecruitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TRecruitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/dao/TTouristDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TTouristDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TInterviewDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TInterviewDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TRecord2Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TRecord2Dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TRecruitDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TRecruitDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TTouristDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TTouristDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/model/TInterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/model/TInterview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/model/TRecruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/model/TRecruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/TInterviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TInterviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/TRecord2Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TRecord2Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/TRecruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TRecruitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/TTouristService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TTouristService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TInterviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TInterviewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TRecord2ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TRecord2ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TRecruitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TRecruitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TTouristServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TTouristServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/controller/TStaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/controller/TStaffController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaffDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaffDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaffDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaffDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/model/TDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/model/TDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smx/service/TStaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smx/service/TStaffService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/managerMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/managerMain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/myView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/myView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/recruit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/recruit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/postView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/postView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,14 +93,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="SCOTT: schema" type="ac44c5e0:OracleImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="T_DEPARTMENT: table" type="be4db629:OracleImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="SCOTT: schema" type="ac44c5e0:OracleImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="T_STAFF1: table" type="be4db629:OracleImplModel$Table" />
+        <item name="T_POSITION: table" type="be4db629:OracleImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -105,7 +102,7 @@
     <session id="1791912398">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.21" value="1" />
@@ -114,8 +111,9 @@
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -129,13 +127,13 @@
           <entry key="T_TRAIN" value="1" />
           <entry key="class" value="2" />
           <entry key="iml" value="2" />
-          <entry key="java" value="246" />
-          <entry key="js" value="2" />
-          <entry key="jsp" value="193" />
+          <entry key="java" value="280" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="229" />
           <entry key="properties" value="3" />
           <entry key="rnc" value="1" />
           <entry key="sql" value="9" />
-          <entry key="xml" value="86" />
+          <entry key="xml" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -143,35 +141,35 @@
           <entry key="CLASS" value="2" />
           <entry key="Database Element" value="15" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="246" />
-          <entry key="JSP" value="193" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JAVA" value="280" />
+          <entry key="JSP" value="229" />
+          <entry key="JavaScript" value="3" />
           <entry key="Properties" value="3" />
           <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="9" />
-          <entry key="XML" value="86" />
+          <entry key="XML" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="15" />
           <entry key="dummy" value="48" />
-          <entry key="java" value="6166" />
-          <entry key="jsp" value="5101" />
-          <entry key="sql" value="339" />
-          <entry key="txt" value="114" />
-          <entry key="xml" value="1302" />
+          <entry key="java" value="8486" />
+          <entry key="jsp" value="6630" />
+          <entry key="sql" value="340" />
+          <entry key="txt" value="260" />
+          <entry key="xml" value="1595" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="6166" />
-          <entry key="JSP" value="5100" />
-          <entry key="PLAIN_TEXT" value="162" />
-          <entry key="SQL" value="53" />
+          <entry key="JAVA" value="8486" />
+          <entry key="JSP" value="6629" />
+          <entry key="PLAIN_TEXT" value="308" />
+          <entry key="SQL" value="58" />
           <entry key="Scratch" value="307" />
-          <entry key="XML" value="1296" />
+          <entry key="XML" value="1585" />
         </counts>
       </usages-collector>
     </session>
@@ -180,88 +178,13 @@
     <favorites_list name="ERP" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/managerMain.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/linkageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1691#1692#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/allDepartments.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/showDepartment.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/createDepartment.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TDepartment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-              <folding>
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TDepartmentDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="83" selection-start-line="4" selection-start-column="83" selection-end-line="4" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Mybatis Mapper" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
@@ -273,32 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/TTouristService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TTouristServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/myView.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/postView.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/model/TInterview.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/TResumeController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/allRecord.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/collectView.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TRecord2Dao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TRecord2Dao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TInterviewDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/TInterviewService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TInterviewServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/TRecord2Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TInterviewDao.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/collectResume.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/recruit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/TRecruitController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/newRecruit.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/employ.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/showStaff.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaffDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaffDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/TStaffService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TStaffServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/TInterviewController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/test.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TDepartmentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/smx/service/TDepartmentService.java" />
@@ -312,18 +209,44 @@
         <option value="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TPositionServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/staffLogin.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/look.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/staffMain.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/TStaffController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/list.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/seeDepartmentAndPosition.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/smx/model/TDepartment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TDepartmentDao.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/managerMain.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/createDepartment.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/showDepartment.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/linkageController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/allDepartments.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/err.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/look.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/staffUpdate.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/staffMain.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/postView.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/doClock.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/TStaffController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaffDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaffDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/model/TStaff1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaff1.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaff1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TStaff1Dao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaff1Dao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/TStaffService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/Staff1Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/impl/Staff1ServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/createDepartment.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/deleteDepartment.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/createPosition.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/deletePosition.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/model/TTrain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/TTrainService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/dao/TTrainDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/service/impl/TTrainServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/trainInformation.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/addTrain.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/trainController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/managerMain.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/mapper/TTrainDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/smx/controller/linkageController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/seeDepartmentAndPosition.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/lookPositions.jsp" />
       </list>
     </option>
   </component>
@@ -342,15 +265,20 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ERP" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="337" />
-    <option name="y" value="210" />
-    <option name="width" value="1389" />
-    <option name="height" value="833" />
+    <option name="x" value="247" />
+    <option name="y" value="221" />
+    <option name="width" value="1390" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -360,7 +288,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -442,16 +369,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="smx" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="smx" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -487,6 +404,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -494,9 +412,9 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558328525620" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558380010207" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="F:/springmvc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -621,7 +539,8 @@
       <workItem from="1557943480633" duration="15966000" />
       <workItem from="1557989712157" duration="5461000" />
       <workItem from="1557999461012" duration="43124000" />
-      <workItem from="1558192466911" duration="41553000" />
+      <workItem from="1558192466911" duration="81096000" />
+      <workItem from="1558375094189" duration="5008000" />
     </task>
     <task id="LOCAL-00001" summary="游客登陆注册&#10;简历的增删改查&#10;投简历&#10;查看已投的简历">
       <created>1557973995809</created>
@@ -644,11 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558054885130</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="游客可以收到面试邀请，管理员可以录用员工，并生成员工信息，员工可以登陆，查看个人信息，员工可以查看通讯录，管理员可以创建部门，部门和职位员工的三级联动查询出了点问题，今天写部门的功能，员工的一些查询功能">
+      <created>1558329763503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558329763503</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153403000" />
+    <option name="totallyTimeSpent" value="197954000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,10 +587,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.32707775" />
-      <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.24731903" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49544626" visible="true" weight="0.22184986" />
+      <window_info id="Structure" order="1" sideWeight="0.50455374" side_tool="true" weight="0.22184986" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -673,7 +598,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" visible="true" weight="0.16288953" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798927" visible="true" weight="0.19971672" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -682,7 +607,7 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5020107" side_tool="true" weight="0.28611898" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.53966004" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
@@ -692,8 +617,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32958803" />
-      <window_info anchor="right" id="Database" order="6" weight="0.17493297" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32908848" />
+      <window_info anchor="right" id="Database" order="6" weight="0.26675603" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -707,272 +632,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="游客登陆注册&#10;简历的增删改查&#10;投简历&#10;查看已投的简历" />
     <MESSAGE value="游客的面试的查看，接收面试，管理员的登陆，管理员发招聘，一些实体类的dao层，今天准备把管理员招聘和发面试邀请，部分部门管理的功能实现下" />
-    <option name="LAST_COMMIT_MESSAGE" value="游客的面试的查看，接收面试，管理员的登陆，管理员发招聘，一些实体类的dao层，今天准备把管理员招聘和发面试邀请，部分部门管理的功能实现下" />
+    <MESSAGE value="游客可以收到面试邀请，管理员可以录用员工，并生成员工信息，员工可以登陆，查看个人信息，员工可以查看通讯录，管理员可以创建部门，部门和职位员工的三级联动查询出了点问题，今天写部门的功能，员工的一些查询功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="游客可以收到面试邀请，管理员可以录用员工，并生成员工信息，员工可以登陆，查看个人信息，员工可以查看通讯录，管理员可以创建部门，部门和职位员工的三级联动查询出了点问题，今天写部门的功能，员工的一些查询功能" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TInterviewDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/TRecruitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/TResumeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TResume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/TRecord2Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="64" column="43" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/collectResume.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://cc38c930-a531-4e45-a5f3-68636f261624/schema/SCOTT/table/T_STAFF">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="18" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TStaffDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/TStaffService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/impl/TStaffServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/collectView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/addResume.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/allRecord.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/chooseResume.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/employ.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/postRecord.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/newRecruit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/recruit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/register.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/TInterviewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2766#2767#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
-            <element signature="e#3001#3002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TDepartmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/TDepartmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/impl/TDepartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TPosition.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TPositionDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TPositionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/TPositionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/impl/TPositionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="869">
           <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/managerLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaffDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -1008,34 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/TStaffController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="21" column="108" lean-forward="true" selection-start-line="21" selection-start-column="108" selection-end-line="21" selection-end-column="108" />
         </state>
       </provider>
     </entry>
@@ -1049,58 +692,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/look.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/staffMain.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/seeDepartmentAndPosition.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TDepartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TDepartmentDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="83" selection-start-line="4" selection-start-column="83" selection-end-line="4" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/createDepartment.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/managerMain.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1111,22 +706,359 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/linkageController.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/err.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="432">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/staffUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/staffMain.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/postView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/doClock.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/TStaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
+            <element signature="e#2654#2655#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TDepartment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TStaffDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TStaff1.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/TStaffService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/Staff1Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/impl/Staff1ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/managerLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TPositionDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/allDepartments.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="622">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/createDepartment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/createPosition.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="75" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/deleteDepartment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/deletePosition.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaff1.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaffDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TStaff1Dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TStaff1Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TStaff1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/model/TTrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+          <folding>
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/TTrainService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/dao/TTrainDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/service/impl/TTrainServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/trainInformation.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/addTrain.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/trainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/mapper/TTrainDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/727953120/FileRecv/change.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1048">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/managerMain.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smx/controller/linkageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="119" column="21" lean-forward="true" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1623#1631#0" expanded="true" />
+            <element signature="e#3876#3884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/seeDepartmentAndPosition.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-742">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-3.1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="10054" column="8" selection-start-line="10054" selection-start-column="8" selection-end-line="10054" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/727953120/FileRecv/adminnewrecruit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/look.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/lookPositions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
         </state>
       </provider>
     </entry>

@@ -24,8 +24,9 @@
         window.location.href="toLogin"}
 </script>
 <a href="toLogin">用户登陆</a><br>
-<a href="toStaff">员工登陆</a><br>
+<a href="toStaffLogin">员工登陆</a><br>
 <a href="toManager">管理员登陆</a><br>
+<a href="toTest">qq</a>
 <c:if test="${sessionScope.recruits!=null}">
 <c:forEach items="${sessionScope.recruits}" var="recruit">
 <table>

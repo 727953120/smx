@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TStaff1Dao">
+    <insert id="add">
+insert into T_STAFF1(STAFF1_NAME,P_ID)values(#{staff1Name},#{pId})
+</insert>
+    <update id="update">
+        update T_STAFF1 set P_ID=#{pId},STAFF1_NAME=#{staff1Name} where STAFF1_ID=#{staff1Id}
+    </update>
+    <delete id="delete">
+        delete from T_STAFF1 where STAFF1_ID=#{staff1Id}
+    </delete>
+    <select id="getAll" resultType="com.smx.model.TStaff1">
+        select * from T_STAFF1
+    </select>
+    <select id="getByPid" resultType="com.smx.model.TStaff1">
+        select  * from T_STAFF1 WHERE P_ID=#{pId}
+    </select>
+</mapper>
