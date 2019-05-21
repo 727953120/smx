@@ -38,7 +38,8 @@
 <div>
     <label>培训管理</label>
     <a href="toTrain">培训记录</a>
-    <a href="toAddTrain">培训记录</a>
+    <a href="toAddTrain">添加培训记录</a>
+    <a href=""></a>
 </div>
 </body>
 </html>

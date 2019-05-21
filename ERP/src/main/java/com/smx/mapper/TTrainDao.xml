@@ -2,21 +2,19 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.smx.dao.TTrainDao">
     <insert id="add">
-        insert  into T_TRAIN(TRAIN_TITLE, TRAIN_CONTENT, S_ID, TRAIN_STARTIME, TRAIN_ENDTIME, TRAIN_PLACE)
-        VALUES (#{trainTitle},#{TrainContent},#{sId},#{trainStatTime},#{trainEndTime},#{trainPlace})
+        insert  into T_TRAIN(TRAIN_TITLE, TRAIN_CONTENT, TRAIN_STATTIME, TRAIN_ENDTIME, TRAIN_PLACE)
+        VALUES (#{trainTitle},#{trainContent},#{trainStatTime},#{trainEndTime},#{trainPlace})
     </insert>
     <update id="update">
-        UPDATE T_TRAIN SET TRAIN_TITLE=#{trainTitle},  TRAIN_CONTENT=#{TrainContent},S_ID=#{sId},TRAIN_STARTIME=#{trainStatTime},TRAIN_ENDTIME=#{trainEndTime}, TRAIN_PLACE=#{trainPlace} WHERE TRAIN_ID=#{trainId} and TRAIN_STATE=1
+        UPDATE T_TRAIN SET TRAIN_TITLE=#{trainTitle},  TRAIN_CONTENT=#{trainContent},TRAIN_STATTIME=#{trainStatTime},TRAIN_ENDTIME=#{trainEndTime}, TRAIN_PLACE=#{trainPlace},TRAIN_STATE=#{trainState} WHERE TRAIN_ID=#{trainId}
     </update>
     <delete id="delete">
         DELETE FROM T_TRAIN WHERE TRAIN_ID=#{trainId}
     </delete>
     <select id="getAll" resultType="com.smx.model.TTrain">
-        SELECT * FROM T_TRAIN WHERE TRAIN_ID=#{trainId}
+        SELECT * FROM T_TRAIN
     </select>
-    <select id="getBySId" resultType="com.smx.model.TTrain">
-        select * from T_TRAIN where S_ID=#{sId} and TRAIN_STATE=1
-    </select>
+
     <select id="getById" resultType="com.smx.model.TTrain">
         select * from T_TRAIN where TRAIN_ID=#{trainId}
     </select>

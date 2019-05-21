@@ -9,8 +9,6 @@ public interface TTrainDao {
     boolean  update(TTrain tTrain);
     boolean delete(TTrain tTrain);
     List<TTrain> getAll();
-    List<TTrain> getBySId(TTrain tTrain);
     TTrain getById(TTrain tTrain);
-
 
 }

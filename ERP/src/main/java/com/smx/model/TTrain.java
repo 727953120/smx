@@ -5,8 +5,7 @@ import java.io.Serializable;
 public class TTrain implements Serializable {
     private Integer trainId;
     private String trainTitle;
-    private String TrainContent;
-    private Integer sId;
+    private String trainContent;
     private String trainStatTime;
     private String trainEndTime;
     private String trainPlace;
@@ -32,19 +31,11 @@ public class TTrain implements Serializable {
     }
 
     public String getTrainContent() {
-        return TrainContent;
+        return trainContent;
     }
 
     public void setTrainContent(String trainContent) {
-        TrainContent = trainContent;
-    }
-
-    public Integer getsId() {
-        return sId;
-    }
-
-    public void setsId(Integer sId) {
-        this.sId = sId;
+        this.trainContent = trainContent;
     }
 
     public String getTrainStatTime() {
@@ -84,8 +75,7 @@ public class TTrain implements Serializable {
         return "TTrain{" +
                 "trainId=" + trainId +
                 ", trainTitle='" + trainTitle + '\'' +
-                ", TrainContent='" + TrainContent + '\'' +
-                ", sId=" + sId +
+                ", trainContent='" + trainContent + '\'' +
                 ", trainStatTime='" + trainStatTime + '\'' +
                 ", trainEndTime='" + trainEndTime + '\'' +
                 ", trainPlace='" + trainPlace + '\'' +
