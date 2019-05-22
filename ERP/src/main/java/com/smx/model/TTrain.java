@@ -1,6 +1,7 @@
 package com.smx.model;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class TTrain implements Serializable {
     private Integer trainId;
@@ -68,6 +69,25 @@ public class TTrain implements Serializable {
 
     public void setTrainState(Integer trainState) {
         this.trainState = trainState;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TTrain tTrain = (TTrain) o;
+        return Objects.equals(trainId, tTrain.trainId) &&
+                Objects.equals(trainTitle, tTrain.trainTitle) &&
+                Objects.equals(trainContent, tTrain.trainContent) &&
+                Objects.equals(trainStatTime, tTrain.trainStatTime) &&
+                Objects.equals(trainEndTime, tTrain.trainEndTime) &&
+                Objects.equals(trainPlace, tTrain.trainPlace) &&
+                Objects.equals(trainState, tTrain.trainState);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(trainId, trainTitle, trainContent, trainStatTime, trainEndTime, trainPlace, trainState);
     }
 
     @Override

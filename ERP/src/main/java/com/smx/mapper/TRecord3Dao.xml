@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TRecord3Dao">
+    <insert id="add">
+        insert into T_RECORD3(TRAIN_ID, S_ID) values (#{trainId},#{sId})
+    </insert>
+    <update id="update">
+        update T_RECORD3 set TRAIN_ID=#{trainId},S_ID=#{sId} WHERE RE3_ID=#{re3Id}
+    </update>
+    <delete id="delete">
+        DELETE FROM T_RECORD3 WHERE TRAIN_ID=#{trainId}
+    </delete>
+    <select id="getAll" resultType="com.smx.model.TRecord3">
+        SELECT * FROM T_RECORD3
+    </select>
+
+    <select id="getBySId" resultType="com.smx.model.TRecord3">
+        SELECT * FROM T_RECORD3 WHERE S_ID=#{sId}
+    </select>
+    <select id="getById" resultType="com.smx.model.TRecord3">
+       SELECT * FROM T_RECORD3 WHERE RE3_ID=#{re3Id}
+    </select>
+    <select id="getByReId" resultType="com.smx.model.TRecord3">
+        SELECT * FROM T_RECORD3 WHERE TRAIN_ID=#{trainId}
+    </select>
+</mapper>

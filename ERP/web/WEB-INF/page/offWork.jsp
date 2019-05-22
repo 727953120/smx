@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: 72795
-  Date: 2019/5/20
-  Time: 14:37
+  Date: 2019/5/21
+  Time: 23:55
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -31,9 +31,9 @@
     }
 </script>
 <div>
-    <form action="toEnd" method="post">
-<input type="text"  name="cBegine" id="getBookTime" value="">
-        <input type="submit" value="上班打卡">
+    <form action="workList" method="post">
+        <input type="text"  name="cEnd" id="getBookTime" value="">
+        <input  type="text" name="cBegine"  value="${sessionScope.morning.cBegine}" readonly>
     </form>
 </div>
 </body>

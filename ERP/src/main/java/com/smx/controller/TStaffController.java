@@ -1,6 +1,8 @@
 package com.smx.controller;
 
+import com.smx.model.TCheck;
 import com.smx.model.TStaff;
+import com.smx.service.TCheckService;
 import com.smx.service.TStaffService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -8,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import javax.xml.crypto.Data;
 import java.nio.channels.FileChannel;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -17,6 +21,8 @@ import java.util.List;
 public class TStaffController {
     @Resource
     private TStaffService tStaffService;
+    @Resource
+    private TCheckService tCheckService;
     @RequestMapping("entry")
     public String entry(HttpSession session){
         List<TStaff> tStaffList=tStaffService.getAll();
@@ -83,5 +89,23 @@ public class TStaffController {
    @RequestMapping("clock")
     public String clock(){
         return "doClock";
+   }
+   @RequestMapping("toEnd")
+   public String toEnd(String cBegine,HttpSession session) throws Exception {
+       SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        TCheck tCheck=new TCheck();
+        tCheck.setcBegine(sdf.parse(cBegine));
+        if(tCheck.getcBegine().getTime()/1000/3600%24<=100){
+            session.setAttribute("morning",tCheck);
+
+        }else if(tCheck.getcBegine().getTime()/1000/3600%24<=11 && tCheck.getcBegine().getTime()/1000/3600%24>9){
+           //扣钱的发放
+        }
+       return "offWork";
+   }
+   @RequestMapping("workList")
+   public String workList(TCheck tCheck){
+        tCheckService.add(tCheck);
+       return "";
    }
 }
