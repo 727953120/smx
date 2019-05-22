@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.smx.dao.TCheckDao">
-    <insert id="add">
-        insert into T_CHECK(C_BEGINE, C_END,S_ID)values (#{cBegin},#{cEnd},#{sId})
+    <insert id="addBegine">
+        insert into T_CHECK(C_BEGINE,S_ID)values (#{cBegine},#{sId})
     </insert>
+
+    <update id="updateEnd">
+        update T_CHECK set C_END=#{cEnd} where C_ID=#{cId}
+    </update>
+    <select id="all" resultType="com.smx.model.TCheck">
+        select * from T_CHECK where S_ID=#{sId}
+    </select>
+
 </mapper>

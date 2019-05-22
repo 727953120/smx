@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.smx.dao.TSalaryDetailDao">
+    <insert id="add">
+        insert into T_SALARYDETAIL(SALARY_BASE, SALARY_ACHIEVEMENTS, SALARY_OVERTIME, SALARY_RECORDMONEY, SALARY_SOCIALSECURITY, SALARY_ALL, S_ID) VALUES
+        (#{salaryBase},#{salaryAchievements},#{salaryOverTime},#{salaryRecordMoney},#{salarySocicalSecurity},#{salaryAll},#{salarysId})
+    </insert>
+    <select id="all" resultType="com.smx.model.TSalaryDetail">
+        select * from T_SALARYDETAIL
+    </select>
+    <select id="getBySid" resultType="com.smx.model.TSalaryDetail">
+        select * from T_SALARYDETAIL where S_ID=#{sId}
+    </select>
+
+</mapper>

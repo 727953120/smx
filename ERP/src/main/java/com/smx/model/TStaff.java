@@ -15,8 +15,17 @@ public class TStaff implements Serializable {
     private Integer sState;
     private String sDepartment;
     private String sPosition;
+    private Double sMoney;
 
     public TStaff() {
+    }
+
+    public Double getsMoney() {
+        return sMoney;
+    }
+
+    public void setsMoney(Double sMoney) {
+        this.sMoney = sMoney;
     }
 
     public Integer getsId() {
@@ -121,6 +130,7 @@ public class TStaff implements Serializable {
                 ", sState=" + sState +
                 ", sDepartment='" + sDepartment + '\'' +
                 ", sPosition='" + sPosition + '\'' +
+                ", sMoney=" + sMoney +
                 '}';
     }
 }

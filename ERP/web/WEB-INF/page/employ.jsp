@@ -27,6 +27,7 @@
         入职时间<input type="Date" name="sDate" required>
         部门<input type="text" name="sDepartment" value="${sessionScope.checkOneRecruit.rDepartment}" required>
         职位<input type="text" name="sPosition" value="${sessionScope.checkOneRecruit.rPosition}">
+        薪资<input type="text" name="sMoney" value="${sessionScope.checkOneRecruit.rSalary}">
         <input type="submit" value="提交">
     </form>
 </div>

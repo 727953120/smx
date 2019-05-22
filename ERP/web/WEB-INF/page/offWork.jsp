@@ -22,7 +22,7 @@
             debugger;
             var today = new Date();
             var date;
-            date = (today.getFullYear()) +"-" + (today.getMonth() + 1 ) + "-" + today.getDate() + "" + today.toLocaleTimeString('chinese',{hour12:false});
+            date = (today.getFullYear()) +"-" + (today.getMonth() + 1 ) + "-" + today.getDate() + " " + today.toLocaleTimeString('chinese',{hour12:false});
             return date;
         }
         window.setInterval(function(){
@@ -34,6 +34,9 @@
     <form action="workList" method="post">
         <input type="text"  name="cEnd" id="getBookTime" value="">
         <input  type="text" name="cBegine"  value="${sessionScope.morning.cBegine}" readonly>
+        <input hidden name="sId" value="${sessionScope.morning.sId}">
+        <input hidden name="cId" value="${sessionScope.morning.cId}">
+        <input type="submit" value="下班打卡">
     </form>
 </div>
 </body>

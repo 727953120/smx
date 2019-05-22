@@ -5,8 +5,8 @@ import java.util.Date;
 
 public class TCheck implements Serializable {
     private Integer cId;
-    private Date cBegine;
-    private Date cEnd;
+    private String cBegine;
+    private String cEnd;
     private Integer sId;
 
     public TCheck() {
@@ -20,19 +20,19 @@ public class TCheck implements Serializable {
         this.cId = cId;
     }
 
-    public Date getcBegine() {
+    public String getcBegine() {
         return cBegine;
     }
 
-    public void setcBegine(Date cBegine) {
+    public void setcBegine(String cBegine) {
         this.cBegine = cBegine;
     }
 
-    public Date getcEnd() {
+    public String getcEnd() {
         return cEnd;
     }
 
-    public void setcEnd(Date cEnd) {
+    public void setcEnd(String cEnd) {
         this.cEnd = cEnd;
     }
 
