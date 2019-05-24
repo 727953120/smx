@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.smx.dao.TRecruitDao">
+    <insert id="add">
+        insert  into T_RECRUIT(R_COMPANYNAME, R_COMPANYADDRESS, R_COMPANYPROFILE, R_FRINGEBENEFITS, R_SALARY, P_ID, R_REQUIREMENTS, D_ID)
+        values (#{rCompanyName},#{rCompanyAddress},#{rCompanyProfile},#{rFringeBenefits},#{rSalary},#{pId},#{rRequirements},#{dId})
+    </insert>
     <update id="update">
         update T_RECRUIT set R_STATE=1
     </update>
@@ -11,13 +15,13 @@
         delete from T_RECRUIT where R_ID=#{rid}
     </delete>
     <select id="getTRecruits" resultType="com.smx.model.TRecruit">
-        select * from T_RECRUIT WHERE R_STATE=1
+        select * from T_RECRUIT WHERE R_STATE=1 order by R_ID
     </select>
     <select id="getRecruit" resultType="com.smx.model.TRecruit">
-        select * from T_RECRUIT where R_ID=#{rid}
+        select * from T_RECRUIT where R_ID=#{rid} order by R_ID
     </select>
     <select id="getTAll" resultType="com.smx.model.TRecruit">
-        select * from T_RECRUIT
+        select * from T_RECRUIT order by R_ID
     </select>
 
 </mapper>

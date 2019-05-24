@@ -45,5 +45,13 @@ public class TPositionServiceImpl implements TPositionService {
         return null;
     }
 
+    @Override
+    public TPosition getByPid(TPosition tPosition) {
+        if(tPosition!=null){
+           return tPositionDao.getByPid(tPosition);
+        }
+        return null;
+    }
+
 
 }

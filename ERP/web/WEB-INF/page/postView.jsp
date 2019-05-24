@@ -22,8 +22,8 @@
         时间<input type="datetime-local" name="IDate" required>
         公司<input type="text" name="ICompany" required>
         姓名<input type="text" name="TName" value="${t1.tName}" required>
-        部门<input type="text" name="IDepartment" value="${r1.rDepartment}" required>
-        职位<input type="text" name="IPosition" value="${r1.rPosition}" required>
+        部门<input type="text" name="IDepartment" value="${d.dDepartment}" required>
+        职位<input type="text" name="IPosition" value="${p.pName}" required>
         <input hidden name="tId" value="${t1.tid}">
         <input hidden name="reId" value="${re.reId}">
         <input type="submit" value="发送">

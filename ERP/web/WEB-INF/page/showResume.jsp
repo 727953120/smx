@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: 72795
@@ -83,7 +84,7 @@
 <div>
     <a href="toAddResume">添加简历</a>
 </div>
-<c:if test="${sessionScope.tResumes==null}">
+<c:if test="${sessionScope.tResumes==null ||fn:length(sessionScope.tResumes)==0}">
     <div>
     <h3>你还没有简历</h3><br>
     <a href="toAddResume">添加简历</a>

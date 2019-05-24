@@ -9,4 +9,5 @@ public interface TPositionDao {
     boolean delete(TPosition tPosition);
     List<TPosition> getAll();
     List<TPosition> getByDid(TPosition tPosition);
+    TPosition getByPid(TPosition tPosition);
 }

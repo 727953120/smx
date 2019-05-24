@@ -1,12 +1,8 @@
 package com.smx.controller;
 
 import com.smx.dao.TRecord3Dao;
-import com.smx.model.TRecord3;
-import com.smx.model.TStaff;
-import com.smx.model.TTrain;
-import com.smx.service.TRecord3Service;
-import com.smx.service.TStaffService;
-import com.smx.service.TTrainService;
+import com.smx.model.*;
+import com.smx.service.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -27,6 +23,10 @@ public class trainController {
     private TStaffService tStaffService;
 @Resource
 private TRecord3Service tRecord3Service;
+@Resource
+private TDepartmentService tDepartmentService;
+@Resource
+private TPositionService tPositionService;
     @RequestMapping("toTrain")
     public String toTrain(HttpSession session) {
       List<TRecord3> tRecord3List=tRecord3Service.getAll();
@@ -67,6 +67,7 @@ private TRecord3Service tRecord3Service;
     @RequestMapping("toAddTrain")
     public String toAddTrain(HttpSession session) {
         List<TStaff> list = tStaffService.getAll();
+
         session.setAttribute("staffList", list);
         return "addTrain";
     }
@@ -119,13 +120,25 @@ private TRecord3Service tRecord3Service;
         tRecord3.setTrainId(tTrain.getTrainId());
       List<TRecord3> tRecord3List=tRecord3Service.getByReId(tRecord3);
       List<TStaff> tStaffList=new ArrayList<TStaff>();
+      List<TDepartment> tDepartmentList=new ArrayList<TDepartment>();
+      List<TPosition> tPositionList=new ArrayList<TPosition>();
       for(TRecord3 tRecord31:tRecord3List){
           TStaff tStaff=new TStaff();
           tStaff.setsId(tRecord31.getsId());
           TStaff tStaff1=tStaffService.get(tStaff);
           tStaffList.add(tStaff1);
+          TDepartment tDepartment=new TDepartment();
+          tDepartment.setdId(tStaff1.getdId());
+          tDepartmentService.getById(tDepartment);
+          tDepartmentList.add(tDepartment);
+          TPosition tPosition=new TPosition();
+          tPosition.setpId(tStaff1.getpId());
+          tPositionService.getByPid(tPosition);
+          tPositionList.add(tPosition);
       }
       session.setAttribute("staffTrain",tStaffList);
+      session.setAttribute("p",tPositionList);
+      session.setAttribute("d",tDepartmentList);
       return "getTrainStaff";
     }
 }

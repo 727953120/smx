@@ -24,7 +24,7 @@
                 <c:forEach items="${sessionScope.allStaff1}" var="s">
                 var id=${s.pId};
                 if(pId==id){
-                    $("#staff").append("<option>${s.staff1Name}</option>");
+                    $("#staff").append("<option>${s.sName}</option>");
                 }
                 </c:forEach>
             });

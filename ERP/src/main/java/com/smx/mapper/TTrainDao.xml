@@ -12,10 +12,10 @@
         DELETE FROM T_TRAIN WHERE TRAIN_ID=#{trainId}
     </delete>
     <select id="getAll" resultType="com.smx.model.TTrain">
-        SELECT * FROM T_TRAIN
+        SELECT * FROM T_TRAIN order by TRAIN_ID
     </select>
 
     <select id="getById" resultType="com.smx.model.TTrain">
-        select * from T_TRAIN where TRAIN_ID=#{trainId}
+        select * from T_TRAIN where TRAIN_ID=#{trainId} order by TRAIN_ID
     </select>
 </mapper>

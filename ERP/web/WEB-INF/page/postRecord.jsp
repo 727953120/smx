@@ -1,4 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
+
 <%--
   Created by IntelliJ IDEA.
   User: 72795
@@ -37,8 +40,8 @@
                 <td>${recruit.rCompanyProfile}</td>
                 <td>${recruit.rSalary}</td>
                 <td>${recruit.rFringeBenefits}</td>
-                <td>${recruit.rDepartment}</td>
-                <td>${recruit.rPosition}</td>
+                <td>${sessionScope.dpts[i.index].dDepartment}</td>
+                <td>${sessionScope.psts[i.index].pName}</td>
                 <td>${recruit.rRequirements}</td>
             </tr>
         </table>
@@ -50,6 +53,9 @@
         </c:if>
 
     </c:forEach>
+</c:if>
+<c:if test="${sessionScope.recruitRecord==null || fn:length(sessionScope.recruitRecord)==0}">
+    <h3>暂时没有投递简历</h3>
 </c:if>
 </body>
 </html>

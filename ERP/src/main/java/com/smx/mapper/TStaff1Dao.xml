@@ -11,9 +11,9 @@ insert into T_STAFF1(STAFF1_NAME,P_ID)values(#{staff1Name},#{pId})
         delete from T_STAFF1 where STAFF1_ID=#{staff1Id}
     </delete>
     <select id="getAll" resultType="com.smx.model.TStaff1">
-        select * from T_STAFF1
+        select * from T_STAFF1 order by STAFF1_ID
     </select>
     <select id="getByPid" resultType="com.smx.model.TStaff1">
-        select  * from T_STAFF1 WHERE P_ID=#{pId}
+        select  * from T_STAFF1 WHERE P_ID=#{pId} order by STAFF1_ID
     </select>
 </mapper>

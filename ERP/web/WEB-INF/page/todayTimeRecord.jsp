@@ -17,8 +17,8 @@
 </head>
 <body>
 <div>
-    <h3>${todayClock.cBegine}</h3><br>
-    <h3>${todayClock.cEnd}</h3><br>
+    <h3>${night.cBegine}</h3><br>
+    <h3>${night.cEnd}</h3><br>
 </div>
 </body>
 </html>

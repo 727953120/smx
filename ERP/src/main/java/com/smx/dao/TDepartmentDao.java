@@ -8,5 +8,5 @@ public interface TDepartmentDao {
     boolean add(TDepartment tDepartment);
     boolean delete(TDepartment tDepartment);
     List<TDepartment> getAll();
-
+    TDepartment getById(TDepartment tDepartment);
 }

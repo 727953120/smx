@@ -38,8 +38,8 @@
         <td>${sessionScope.tRecruit1.rCompanyProfile}</td>
         <td>${sessionScope.tRecruit1.rSalary}</td>
         <td>${sessionScope.tRecruit1.rFringeBenefits}</td>
-        <td>${sessionScope.tRecruit1.rDepartment}</td>
-        <td>${sessionScope.tRecruit1.rPosition}</td>
+        <td>${sessionScope.department3.dDepartment}</td>
+        <td>${sessionScope.tPosition3.rName}</td>
         <td>${sessionScope.tRecruit1.rRequirements}</td>
     </tr>
 </table>

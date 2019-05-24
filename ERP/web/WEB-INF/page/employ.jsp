@@ -22,12 +22,14 @@
         密码<input type="text" name="sPass" value="123456" required>
         性别<input type="text" name="sSex" value="${sessionScope.checkOneResume.resumeAge}" required>
         电话<input type="text" name="sPhone" value="${sessionScope.checkOneResume.resumePhone}" required>
-        邮箱<input type="text" name="sEmail" value="${sessionScope.checkOneResume.resumeEmail}">
+        邮箱<input type="text" name="sEmail" value="${sessionScope.checkOneResume.resumeEmail}" required>
         银行卡<input type="text" name="sBankCard" required>
         入职时间<input type="Date" name="sDate" required>
-        部门<input type="text" name="sDepartment" value="${sessionScope.checkOneRecruit.rDepartment}" required>
-        职位<input type="text" name="sPosition" value="${sessionScope.checkOneRecruit.rPosition}">
-        薪资<input type="text" name="sMoney" value="${sessionScope.checkOneRecruit.rSalary}">
+        部门<input type="text" name="dDepartment" value="${sessionScope.checkOneDepartment.dDepartment}" readonly>
+        <input hidden name="dId" value="${sessionScope.checkOneRecruit.dId}" >
+        职位<input type="text" name="pName" value="${sessionScope.checkOnePosition.pName}" readonly>
+        <input hidden name="pId" value="${sessionScope.checkOneRecruit.pId}">
+        薪资<input type="text" name="sMoney" value="${sessionScope.checkOneRecruit.rSalary}" readonly>
         <input type="submit" value="提交">
     </form>
 </div>

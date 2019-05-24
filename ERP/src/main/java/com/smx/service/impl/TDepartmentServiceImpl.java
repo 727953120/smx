@@ -34,4 +34,13 @@ public class TDepartmentServiceImpl implements TDepartmentService {
         }
         return null;
     }
+
+    @Override
+    public TDepartment getById(TDepartment tDepartment) {
+        if(tDepartment!=null){
+         return tDepartmentDao.getById(tDepartment);
+        }
+
+        return null;
+    }
 }

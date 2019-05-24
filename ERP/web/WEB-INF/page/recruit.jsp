@@ -19,7 +19,7 @@
 <body>
 <script src="js/jquery-3.1.0.js"></script>
 <c:if test="${sessionScope.allTRecruits!=null}">
-    <c:forEach items="${sessionScope.allTRecruits}" var="recruits">
+    <c:forEach items="${sessionScope.allTRecruits}" var="recruits" varStatus="i">
         <table>
             <tr>
                 <th>公司名</th>
@@ -30,7 +30,6 @@
                 <th>部门</th>
                 <th>职位</th>
                 <th>岗位要求</th>
-                <th>发布招聘</th>
                 <c:if test="${recruits.rState==0}">
                 <th>发布</th>
                 <th>删除</th>
@@ -45,10 +44,9 @@
                 <td>${recruits.rCompanyProfile}</td>
                 <td>${recruits.rSalary}</td>
                 <td>${recruits.rFringeBenefits}</td>
-                <td>${recruits.rDepartment}</td>
-                <td>${recruits.rPosition}</td>
+                <td>${sessionScope.dpts[i.index].dDepartment}</td>
+                <td>${sessionScope.psts[i.index].pName}</td>
                 <td>${recruits.rRequirements}</td>
-                <td><a href="postNewRecruit">发布招聘</a></td>
                     <c:if test="${recruits.rState==0}">
                 <td>
                     <a href="postRecruit?rid=${recruits.rid}">发布</a>

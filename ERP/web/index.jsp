@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: 72795
@@ -27,8 +28,8 @@
 <a href="toStaffLogin">员工登陆</a><br>
 <a href="toManager">管理员登陆</a><br>
 <a href="toTest">qq</a>
-<c:if test="${sessionScope.recruits!=null}">
-<c:forEach items="${sessionScope.recruits}" var="recruit">
+<c:if test="${sessionScope.recruits!=null&&fn:length(sessionScope.recruits)!=0}">
+<c:forEach items="${sessionScope.recruits}" var="recruit" varStatus="i">
 <table>
     <tr>
         <th>公司名</th>
@@ -47,15 +48,15 @@
         <td>${recruit.rCompanyProfile}</td>
         <td>${recruit.rSalary}</td>
         <td>${recruit.rFringeBenefits}</td>
-        <td>${recruit.rDepartment}</td>
-        <td>${recruit.rPosition}</td>
+        <td>${sessionScope.dpts[i.index].dDepartment}</td>
+        <td>${sessionScope.psts[i.index].pName}</td>
         <td>${recruit.rRequirements}</td>
         <td><input type="button" value="投递" onclick="MsgBox()"/></td>
     </tr>
 </table>
 </c:forEach>
 </c:if>
-<c:if test="${sessionScope.recruits==null}">
+<c:if test="${sessionScope.recruits==null || fn:length(sessionScope.recruits)==0}">
     <div>
         <h3>暂时没有招聘信息</h3>
     </div>

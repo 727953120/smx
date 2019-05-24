@@ -4,9 +4,12 @@
     <insert id="add">insert into T_POSITION(P_NAME,D_ID) values (#{pName},#{dId})</insert>
     <delete id="delete">delete from T_POSITION where P_ID=#{pId}</delete>
     <select id="getAll" resultType="com.smx.model.TPosition">
-        select * from T_POSITION
+        select * from T_POSITION order by P_ID
     </select>
     <select id="getByDid" resultType="com.smx.model.TPosition">
-        select * from T_POSITION where D_ID=#{dId}
+        select * from T_POSITION where D_ID=#{dId} order by P_ID
+    </select>
+    <select id="getByPid" resultType="com.smx.model.TPosition">
+        select  * from T_POSITION where P_ID=#{pId}
     </select>
 </mapper>

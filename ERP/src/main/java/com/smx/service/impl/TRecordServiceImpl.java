@@ -41,7 +41,7 @@ public class TRecordServiceImpl implements TRecordService {
             return null;
         }
         List<TRecord> list=tRecordDao.getAllBySid(tRecord);
-        if(list.size()!=0&&list==null){
+        if(list.size()!=0&&list!=null){
             return list;
         }
         return null;
@@ -50,7 +50,7 @@ public class TRecordServiceImpl implements TRecordService {
     @Override
     public List<TRecord> getAll() {
         List<TRecord> list=tRecordDao.getAll();
-        if(list.size()!=0&&list==null){
+        if(list.size()!=0&&list!=null){
             return list;
         }
         return null;

@@ -1,10 +1,7 @@
 package com.smx.controller;
 
 import com.smx.model.*;
-import com.smx.service.TInterviewService;
-import com.smx.service.TRecord2Service;
-import com.smx.service.TRecruitService;
-import com.smx.service.TResumeService;
+import com.smx.service.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,12 +19,24 @@ public class TRecord2Controller {
     private TResumeService tResumeService;
     @Resource
     private TInterviewService interviewService;
+    @Resource
+    private TDepartmentService departmentService;
+    @Resource
+    private TPositionService positionService;
     @RequestMapping("toChoose")
     public String toChoose(Integer rid, HttpSession session){
         TRecruit tRecruit=new TRecruit();
         tRecruit.setRid(rid);
         TRecruit tRecruit1=tRecruitService.getRecruit(tRecruit);
         session.setAttribute("tRecruit1",tRecruit1);
+        TDepartment tDepartment=new TDepartment();
+        tDepartment.setdId(tRecruit1.getdId());
+        TDepartment tDepartment1= departmentService.getById(tDepartment);
+        session.setAttribute("department3",tDepartment);
+        TPosition tPosition=new TPosition();
+       tPosition.setpId(tRecruit1.getpId());
+        TPosition tPosition1=positionService.getByPid(tPosition);
+        session.setAttribute("tPosition3",tPosition1);
         List<TResume> tResumeList=tResumeService.getAll();
         session.setAttribute("tResumes",tResumeList);
         return "chooseResume";
@@ -62,7 +71,15 @@ public class TRecord2Controller {
         TRecruit recruit=new TRecruit();
         recruit.setRid(tRecord21.getrId());
       TRecruit tRecruit=tRecruitService.getRecruit(recruit);
+      TDepartment tDepartment=new TDepartment();
+      tDepartment.setdId(tRecruit.getdId());
+        TDepartment tDepartment1= departmentService.getById(tDepartment);
+        session.setAttribute("checkOneDepartment",tDepartment1);
       session.setAttribute("checkOneRecruit",tRecruit);
+      TPosition tPosition=new TPosition();
+      tPosition.setpId(tRecruit.getpId());
+        TPosition tPosition1=  positionService.getByPid(tPosition);
+      session.setAttribute("checkOnePosition",tPosition1);
         TResume tResume=new TResume();
         tResume.setResumeId(tRecord21.getResumeId());
         TResume tResume1=tResumeService.getResume(tResume);

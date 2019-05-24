@@ -13,19 +13,11 @@ public class TStaff implements Serializable {
     private String sBankCard;
     private String sDate;
     private Integer sState;
-    private String sDepartment;
-    private String sPosition;
+    private Integer dId;
+    private Integer pId;
     private Double sMoney;
 
     public TStaff() {
-    }
-
-    public Double getsMoney() {
-        return sMoney;
-    }
-
-    public void setsMoney(Double sMoney) {
-        this.sMoney = sMoney;
     }
 
     public Integer getsId() {
@@ -100,20 +92,28 @@ public class TStaff implements Serializable {
         this.sState = sState;
     }
 
-    public String getsDepartment() {
-        return sDepartment;
+    public Integer getdId() {
+        return dId;
     }
 
-    public void setsDepartment(String sDepartment) {
-        this.sDepartment = sDepartment;
+    public void setdId(Integer dId) {
+        this.dId = dId;
     }
 
-    public String getsPosition() {
-        return sPosition;
+    public Integer getpId() {
+        return pId;
     }
 
-    public void setsPosition(String sPosition) {
-        this.sPosition = sPosition;
+    public void setpId(Integer pId) {
+        this.pId = pId;
+    }
+
+    public Double getsMoney() {
+        return sMoney;
+    }
+
+    public void setsMoney(Double sMoney) {
+        this.sMoney = sMoney;
     }
 
     @Override
@@ -128,8 +128,8 @@ public class TStaff implements Serializable {
                 ", sBankCard='" + sBankCard + '\'' +
                 ", sDate='" + sDate + '\'' +
                 ", sState=" + sState +
-                ", sDepartment='" + sDepartment + '\'' +
-                ", sPosition='" + sPosition + '\'' +
+                ", dId=" + dId +
+                ", pId=" + pId +
                 ", sMoney=" + sMoney +
                 '}';
     }

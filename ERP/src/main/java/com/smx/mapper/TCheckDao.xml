@@ -9,7 +9,7 @@
         update T_CHECK set C_END=#{cEnd} where C_ID=#{cId}
     </update>
     <select id="all" resultType="com.smx.model.TCheck">
-        select * from T_CHECK where S_ID=#{sId}
+        select * from T_CHECK where S_ID=#{sId} order by C_ID
     </select>
 
 </mapper>

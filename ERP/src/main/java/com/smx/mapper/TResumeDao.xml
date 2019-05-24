@@ -3,7 +3,7 @@
 <mapper namespace="com.smx.dao.TResumeDao">
     <insert id="add">
         insert into T_RESUME(RESUME_NAME, RESUME__SEX, RESUME__PHONE, RESUME__EMAIL, RESUME_AGE, RESUME_ADDRESS, RESUME_SALARYEXPECTATION, RESUME_EDUCATION, RESUME_EDUCATIONTIME, RESUME_COMPANY, RESUME_TIME, RESUME_POSITION, RESUME_EXPERIENCE, T_ID)
-        values (#{resumeName},#{resumeSex},#{resumePhone},#{resumeEmail},#{resumeAge},#{resumeAddress},#{resumeSalaryExpectation},#{resumeEducation},#{resumeEducationTime},#{resumeCompany},#{resumeTime},#{resumePosition},#{resumeExperience},#{rId})
+        values (#{resumeName},#{resumeSex},#{resumePhone},#{resumeEmail},#{resumeAge},#{resumeAddress},#{resumeSalaryExpectation},#{resumeEducation},#{resumeEducationTime},#{resumeCompany},#{resumeTime},#{resumePosition},#{resumeExperience},#{tId})
 
     </insert>
     <update id="update">
@@ -15,9 +15,9 @@
     </delete>
 
     <select id="getResume" resultType="com.smx.model.TResume">
-        select * from T_RESUME WHERE RESUME_ID=#{resumeId}
+        select * from T_RESUME WHERE RESUME_ID=#{resumeId} order by RESUME_ID
     </select>
     <select id="getAll" resultType="com.smx.model.TResume">
-        select * from T_RESUME
+        select * from T_RESUME order by RESUME_ID
     </select>
 </mapper>

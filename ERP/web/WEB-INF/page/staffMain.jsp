@@ -20,6 +20,8 @@
     <a href="myselfInformation?sId=${sessionScope.staff.sId}">查看个人信息</a>
     <a href="toList">通讯录</a>
     <a href="clock">打卡</a>
+    <a href="selfTimeRecord">查看考勤</a>
+    <a href="rewardAndPunishment">产看奖罚记录</a>
 </div>
 </body>
 </html>

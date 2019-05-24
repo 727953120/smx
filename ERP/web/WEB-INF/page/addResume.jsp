@@ -26,7 +26,7 @@
      学历<input type="text" name="resumeEducation" required>时间<input type="text" name="resumeEducationTime" required><br>
      公司<input type="text" name="resumeCompany" required>就职时间<input type="date" name="resumeTime" required><br>
      职位<input type="text" name="resumePosition" required><br>
-     工作经历<input type="text" name="resumeExperience" required><br><input hidden name="rId" value="${sessionScope.t.tid}">
+     工作经历<input type="text" name="resumeExperience" required><br><input hidden name="tId" value="${sessionScope.t.tid}">
      <input type="submit" value="提交"><a href="#">返回</a>
     </form>
 </div>

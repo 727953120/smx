@@ -46,4 +46,16 @@ public class TStaffServiceImpl implements TStaffService {
         }
         return null;
     }
+
+    @Override
+    public List<TStaff> getByPid(TStaff tStaff) {
+        if(tStaff==null){
+            return null;
+        }
+        List<TStaff> tStaffList=tStaffDao.getByPid(tStaff);
+        if(tStaffList!=null&&tStaffList.size()!=0){
+            return  tStaffList;
+        }
+        return null;
+    }
 }

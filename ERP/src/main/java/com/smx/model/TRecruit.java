@@ -9,28 +9,12 @@ public class TRecruit implements Serializable {//招聘信息类
     private String rCompanyProfile;//公司简介
     private String rFringeBenefits;//福利待遇
     private Integer rSalary;
-    private String rDepartment;
-    private String rPosition;//职位
+    private Integer dId;
+    private Integer pId;//职位
     private String rRequirements;//岗位要求
     private Integer rState;
 
     public TRecruit() {
-    }
-
-    public Integer getrState() {
-        return rState;
-    }
-
-    public void setrState(Integer rState) {
-        this.rState = rState;
-    }
-
-    public String getrDepartment() {
-        return rDepartment;
-    }
-
-    public void setrDepartment(String rDepartment) {
-        this.rDepartment = rDepartment;
     }
 
     public Integer getRid() {
@@ -81,12 +65,20 @@ public class TRecruit implements Serializable {//招聘信息类
         this.rSalary = rSalary;
     }
 
-    public String getrPosition() {
-        return rPosition;
+    public Integer getdId() {
+        return dId;
     }
 
-    public void setrPosition(String rPosition) {
-        this.rPosition = rPosition;
+    public void setdId(Integer dId) {
+        this.dId = dId;
+    }
+
+    public Integer getpId() {
+        return pId;
+    }
+
+    public void setpId(Integer pId) {
+        this.pId = pId;
     }
 
     public String getrRequirements() {
@@ -95,6 +87,14 @@ public class TRecruit implements Serializable {//招聘信息类
 
     public void setrRequirements(String rRequirements) {
         this.rRequirements = rRequirements;
+    }
+
+    public Integer getrState() {
+        return rState;
+    }
+
+    public void setrState(Integer rState) {
+        this.rState = rState;
     }
 
     @Override
@@ -106,8 +106,8 @@ public class TRecruit implements Serializable {//招聘信息类
                 ", rCompanyProfile='" + rCompanyProfile + '\'' +
                 ", rFringeBenefits='" + rFringeBenefits + '\'' +
                 ", rSalary=" + rSalary +
-                ", rDepartment='" + rDepartment + '\'' +
-                ", rPosition='" + rPosition + '\'' +
+                ", dId=" + dId +
+                ", pId=" + pId +
                 ", rRequirements='" + rRequirements + '\'' +
                 ", rState=" + rState +
                 '}';

@@ -10,5 +10,5 @@ public interface TStaffDao {
     TStaff get(TStaff tStaff);
     List<TStaff> getAll();
     TStaff login(TStaff tStaff);
-
+    List<TStaff> getByPid(TStaff tStaff);
 }

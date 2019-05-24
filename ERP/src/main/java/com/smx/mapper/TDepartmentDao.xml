@@ -8,6 +8,9 @@
         delete from T_DEPARTMENT where D_ID=#{dId}
     </delete>
     <select id="getAll" resultType="com.smx.model.TDepartment">
-        select * from T_DEPARTMENT
+        select * from T_DEPARTMENT order by D_ID
+    </select>
+    <select id="getById" resultType="com.smx.model.TDepartment">
+        select * from  T_DEPARTMENT where D_ID=#{dId}
     </select>
 </mapper>

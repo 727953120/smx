@@ -6,10 +6,10 @@
         (#{salaryBase},#{salaryAchievements},#{salaryOverTime},#{salaryRecordMoney},#{salarySocicalSecurity},#{salaryAll},#{salarysId})
     </insert>
     <select id="all" resultType="com.smx.model.TSalaryDetail">
-        select * from T_SALARYDETAIL
+        select * from T_SALARYDETAIL order by SALARY_ID
     </select>
     <select id="getBySid" resultType="com.smx.model.TSalaryDetail">
-        select * from T_SALARYDETAIL where S_ID=#{sId}
+        select * from T_SALARYDETAIL where S_ID=#{sId} order by SALARY_ID
     </select>
 
 </mapper>

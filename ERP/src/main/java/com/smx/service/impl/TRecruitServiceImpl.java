@@ -54,4 +54,12 @@ public class TRecruitServiceImpl implements TRecruitService {
         }
         return false;
     }
+
+    @Override
+    public boolean add(TRecruit tRecruit) {
+        if(tRecruit!=null){
+            return tRecruitDao.add(tRecruit);
+        }
+        return false;
+    }
 }

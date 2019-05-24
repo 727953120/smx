@@ -48,6 +48,7 @@ public class TResumeController {
     }
     @RequestMapping("AddResume")
     public String AddResume(TResume tResume,HttpSession session){
+        System.out.println(tResume);
         tResumeService.add(tResume);
         return "forward:getAll";
     }
@@ -59,19 +60,19 @@ public class TResumeController {
     @RequestMapping("getAlreadyPost")
     public String getAlreadyPost(HttpSession session){
      TTourist tTourist= (TTourist) session.getAttribute("t");
+        System.out.println(tTourist);
      TRecord2 tRecord2=new TRecord2();
      tRecord2.settId(tTourist.getTid());
       List<TRecord2> tRecord2List=tRecord2Service.getAll(tRecord2);//根据用户id找到所有的投递记录
-        System.out.println(tRecord2List);
         session.setAttribute("seeRecord2",tRecord2List);
       List<TRecruit> list=new ArrayList<TRecruit>();
+      if(tRecord2List!=null&&tRecord2List.size()!=0){
       for(TRecord2 t:tRecord2List){//遍历记录得到招聘详细的id
           TRecruit tRecruit=new TRecruit();
           tRecruit.setRid(t.getrId());
           TRecruit tRecruit1=tRecruitService.getRecruit(tRecruit);
-          System.out.println(tRecruit1);
           list.add(tRecruit1);
-      }
+      }}
       session.setAttribute("recruitRecord",list);
         return "postRecord";
     }

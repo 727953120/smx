@@ -8,10 +8,10 @@
         update T_RECORD2 set RE_STATE=1
     </update>
     <select id="getAll" resultType="com.smx.model.TRecord2">
-        select * from T_RECORD2 where T_ID=#{tId}
+        select * from T_RECORD2 where T_ID=#{tId} order by RE_ID
     </select>
     <select id="getInterviews" resultType="com.smx.model.TRecord2">
-        select * from T_RECORD2
+        select * from T_RECORD2 order by RE_ID
     </select>
     <select id="get" resultType="com.smx.model.TRecord2">
         select * from T_RECORD2 where RE_ID=#{reId}

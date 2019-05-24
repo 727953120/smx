@@ -11,15 +11,15 @@
         delete from T_INTERVIEW where WHERE I_ID=#{IId}
     </delete>
     <select id="getAll" resultType="com.smx.model.TInterview">
-        select * from T_INTERVIEW
+        select * from T_INTERVIEW order by I_ID
     </select>
     <select id="getInterview" resultType="com.smx.model.TInterview">
-        SELECT * FROM T_INTERVIEW WHERE T_ID=#{TId}
+        SELECT * FROM T_INTERVIEW WHERE T_ID=#{TId} order by I_ID
     </select>
     <select id="get" resultType="com.smx.model.TInterview">
-        SELECT * FROM T_INTERVIEW WHERE I_ID=#{IId}
+        SELECT * FROM T_INTERVIEW WHERE I_ID=#{IId} order by I_ID
     </select>
     <select id="getByReId" resultType="com.smx.model.TInterview">
-        SELECT * FROM T_INTERVIEW WHERE RE_ID=#{reId}
+        SELECT * FROM T_INTERVIEW WHERE RE_ID=#{reId} order by I_ID
     </select>
 </mapper>

@@ -11,4 +11,5 @@ public interface TRecruitDao {
     boolean update(TRecruit tRecruit);
     boolean back(TRecruit tRecruit);
     boolean delete(TRecruit tRecruit);
+    boolean add(TRecruit tRecruit);
 }

@@ -11,16 +11,16 @@
         DELETE FROM T_RECORD3 WHERE TRAIN_ID=#{trainId}
     </delete>
     <select id="getAll" resultType="com.smx.model.TRecord3">
-        SELECT * FROM T_RECORD3
+        SELECT * FROM T_RECORD3 order by RE3_ID
     </select>
 
     <select id="getBySId" resultType="com.smx.model.TRecord3">
-        SELECT * FROM T_RECORD3 WHERE S_ID=#{sId}
+        SELECT * FROM T_RECORD3 WHERE S_ID=#{sId} order by RE3_ID
     </select>
     <select id="getById" resultType="com.smx.model.TRecord3">
-       SELECT * FROM T_RECORD3 WHERE RE3_ID=#{re3Id}
+       SELECT * FROM T_RECORD3 WHERE RE3_ID=#{re3Id} order by RE3_ID
     </select>
     <select id="getByReId" resultType="com.smx.model.TRecord3">
-        SELECT * FROM T_RECORD3 WHERE TRAIN_ID=#{trainId}
+        SELECT * FROM T_RECORD3 WHERE TRAIN_ID=#{trainId} order by RE3_ID
     </select>
 </mapper>

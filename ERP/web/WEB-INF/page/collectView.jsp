@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: 72795
@@ -18,7 +19,7 @@
 </head>
 <body>
 <script src="js/jquery-3.1.0.js"></script>
-<c:if test="${sessionScope.managerView!=null}" >
+<c:if test="${sessionScope.managerView!=null && fn:length(sessionScope.managerView)!=0}" >
     <c:forEach items="${sessionScope.managerView}" var="view">
 <div>
     <table>
@@ -44,6 +45,9 @@
     </table>
 </div>
     </c:forEach>
+</c:if>
+<c:if test="${sessionScope.managerView==null ||fn:length(sessionScope.managerView)==0}">
+ <h3>没有面试</h3>
 </c:if>
 </body>
 </html>

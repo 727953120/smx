@@ -24,7 +24,7 @@
 </script>
 <script>
     function employ() {
-        window.location.href="employStaff"}
+        window.location.href="employStaff?pId=${sessionScope.checkOnePosition.pId}&dId=${sessionScope.checkOneDepartment.dId}&resumeId=${sessionScope.checkOneResume.resumeId}"}
 </script>
 <div>
     <table border="2px">
@@ -33,8 +33,8 @@
             <th>职位</th>
         </tr>
         <tr>
-            <td>${sessionScope.checkOneRecruit.rDepartment}</td>
-            <td>${sessionScope.checkOneRecruit.rPosition}</td>
+            <td>${sessionScope.checkOneDepartment.dDepartment}</td>
+            <td>${sessionScope.checkOnePosition.pName}</td>
         </tr>
         <tr>
             <th>姓名</th>

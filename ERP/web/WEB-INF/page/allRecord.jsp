@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: 72795
@@ -42,6 +43,9 @@
         </table>
     </div>
 </c:forEach>
+</c:if>
+<c:if test="${sessionScope.allRecord==null||fn:length(sessionScope.allRecord)==0}">
+    <h3>没有简历</h3>
 </c:if>
 </body>
 </html>

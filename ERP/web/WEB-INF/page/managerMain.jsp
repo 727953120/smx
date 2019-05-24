@@ -19,6 +19,7 @@
 <div>
     <label>招聘管理</label><br>
     <a href="toRecruit">招聘信息</a>
+    <a href="draft">草稿</a>
     <a href="getInterviewers">简历</a>
     <a href="getInterviews">面试情况</a>
 </div>
@@ -39,6 +40,7 @@
     <label>培训管理</label>
     <a href="toTrain">培训记录</a>
     <a href="toAddTrain">添加培训记录</a>
+    <a href="toGetSalary">薪资结算</a>
 </div>
 </body>
 </html>

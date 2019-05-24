@@ -101,7 +101,7 @@ public class TStaffController {
        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd HH:mm");
        Date date=new Date();
        TStaff tStaff= (TStaff) session.getAttribute("staff");
-       String date1=sdf.format(date);
+       String date1=sdf.format(date);//date1是new的
        String date6=sdf1.format(date);
        TCheck tCheck1=new TCheck();
        tCheck1.setsId(tStaff.getsId());
@@ -118,12 +118,13 @@ public class TStaffController {
            tCheckService.addBegine(tCheck);
                TRecord tRecord=new TRecord();
                tRecord.setsId(tStaff.getsId());
-               tRecord.setRecordDate(date6);
+               tRecord.setRecordDate(date1);
                tRecord.setRecordReason("矿工");
                tRecord.setRecordMoney( -tStaff.getsMoney());
                tRecordService.add(tRecord);
                session.setAttribute("type",1);}else {
                    session.setAttribute("type",1);
+                   System.out.println("1000");
                }
            }}else {
                TCheck tCheck=new TCheck();
@@ -132,43 +133,44 @@ public class TStaffController {
                tCheckService.addBegine(tCheck);
                TRecord tRecord=new TRecord();
                tRecord.setsId(tStaff.getsId());
-               tRecord.setRecordDate(date6);
+               tRecord.setRecordDate(date1);
                tRecord.setRecordReason("矿工");
                tRecord.setRecordMoney( -tStaff.getsMoney());
                tRecordService.add(tRecord);
                session.setAttribute("type",1);
+               System.out.println("9999");
            }
        }else{
      if(list!=null){
             for(TCheck tCheck:list){
-                    Date date2=sdf.parse(tCheck.getcBegine());
-                    String date3=sdf.format(date2);
-            if(tCheck.getcEnd()==null){
-                    if(date3.equals(date1)){
-                             return "forward:toEnd?sId="+tCheck.getsId()+"&cId="+tCheck.getcId()+"&cBegine="+tCheck.getcBegine();
-                    }
+                    Date date2=sdf.parse(tCheck.getcBegine());//遍历到的tcheck
+                    String date3=sdf.format(date2);//数据库里的date2
+            if(tCheck.getcEnd()==null &&date3.equals(date1)&&tCheck.getcBegine()!=null){
+                        session.setAttribute("morning", tCheck);
+                System.out.println("88888");
+                        return "offWork";
+                }else if(tCheck.getcEnd()!=null && date3.equals(date1)){
+                session.setAttribute("night",tCheck);
+                return "todayTimeRecord";
                 }
-                if(tCheck.getcEnd()!=null){
-                     Date date4 = sdf.parse(tCheck.getcEnd());
-                            String date5 = sdf.format(date4);
-                         if (date3.equals(date1) && date5.equals(date1)) {
-                                return "forward:workList?sId=" + tCheck.getsId() + "&cId=" + tCheck.getcId() + "&cBegine=" + tCheck.getcBegine() + "&cEnd=" + tCheck.getcEnd();
-                            }
-                    }
          }
+
      }}
-         return "doClock";
+       return "doClock";
 
    }
    @RequestMapping("toEnd")
    public String toEnd(TCheck tCheck,HttpSession session) throws Exception {
        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+
         if((sdf.parse(tCheck.getcBegine()).getTime()-sdf1.parse(tCheck.getcBegine()).getTime())/1000/3600.0<=9){
             tCheckService.addBegine(tCheck);
             List<TCheck> tChecks=tCheckService.all(tCheck);
             TCheck tCheck1=tChecks.get(tChecks.size()-1);
             session.setAttribute("morning",tCheck1);
+            System.out.println(tCheck1);
+            System.out.println("5555");
         }else if((sdf.parse(tCheck.getcBegine()).getTime()-sdf1.parse(tCheck.getcBegine()).getTime())/1000/3600.0<=11 && (sdf.parse(tCheck.getcBegine()).getTime()-sdf1.parse(tCheck.getcBegine()).getTime())/1000/3600.0>9) {
             tCheckService.addBegine(tCheck);
             TRecord tRecord = new TRecord();
@@ -177,39 +179,83 @@ public class TStaffController {
             tRecord.setRecordReason("迟到" + ((sdf.parse(tCheck.getcBegine()).getTime() - sdf1.parse(tCheck.getcBegine()).getTime()) / 1000 / 3600.0 - 9) + "小时");
             tRecord.setRecordMoney(1.0);
             tRecordService.add(tRecord);
+            List<TCheck> tChecks=tCheckService.all(tCheck);
+            TCheck tCheck1=tChecks.get(tChecks.size()-1);
+            System.out.println("44444");
+            session.setAttribute("morning",tCheck1);
         }
        return "offWork";
    }
    @RequestMapping("workList")
    public String workList(TCheck tCheck,HttpSession session) throws Exception {
+       System.out.println(tCheck);
+       TStaff tStaff= (TStaff) session.getAttribute("staff");
        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
        if((sdf.parse(tCheck.getcEnd()).getTime()-sdf1.parse(tCheck.getcEnd()).getTime())/1000/3600.0>=18){
            tCheckService.updateEnd(tCheck);
-           session.setAttribute("morning",tCheck);
+           session.setAttribute("night",tCheck);
        }else if((sdf.parse(tCheck.getcEnd()).getTime()-sdf1.parse(tCheck.getcEnd()).getTime())/1000/3600.0<18 &&(sdf.parse(tCheck.getcEnd()).getTime()-sdf1.parse(tCheck.getcEnd()).getTime())/1000/3600.0>=16){
            tCheckService.updateEnd(tCheck);
-           session.setAttribute("morning",tCheck);
+           session.setAttribute("night",tCheck);
            TRecord tRecord=new TRecord();
            tRecord.setsId(tCheck.getsId());
            tRecord.setRecordDate(tCheck.getcEnd());
            tRecord.setRecordReason("早退"+((sdf.parse(tCheck.getcEnd()).getTime()-sdf1.parse(tCheck.getcEnd()).getTime())/1000/3600.0-18)+"小时");
            tRecord.setRecordMoney(-Math.ceil(3)*50);
            tRecordService.add(tRecord);
-       }else if((sdf.parse(tCheck.getcEnd()).getTime()-sdf1.parse(tCheck.getcEnd()).getTime())/1000/3600.0<16){
+
+       }else if((sdf.parse(tCheck.getcEnd()).getTime()-sdf1.parse(tCheck.getcEnd()).getTime())/1000/3600.0<16){//大于11或者小于9
+           if((sdf.parse(tCheck.getcBegine()).getTime()-sdf1.parse(tCheck.getcBegine()).getTime())/1000/3600.0>9&&(sdf.parse(tCheck.getcBegine()).getTime()-sdf1.parse(tCheck.getcBegine()).getTime())/1000/3600.0<=11){
            tCheckService.updateEnd(tCheck);
-           TRecord tRecord=new TRecord();
-           tRecord.setsId(tCheck.getsId());
+            List<TRecord> list=tRecordService.getAll();
+               System.out.println(list);
+           TRecord tRecord=list.get(list.size()-1);
            tRecord.setRecordDate(tCheck.getcEnd());
            tRecord.setRecordReason("矿工");
-           TStaff tStaff=new TStaff();
-           tStaff.setsId(tCheck.getsId());
-           TStaff tStaff1=tStaffService.get(tStaff);
-           tRecord.setRecordMoney( -tStaff1.getsMoney());
-           tRecordService.add(tRecord);
-           tCheckService.updateEnd(tCheck);
-           session.setAttribute("morning",tCheck);
+
+           tRecord.setRecordMoney( -tStaff.getsMoney());
+               System.out.println("111");
+           tRecordService.update(tRecord);
+           session.setAttribute("night",tCheck);
+           }else if((sdf.parse(tCheck.getcBegine()).getTime()-sdf1.parse(tCheck.getcBegine()).getTime())/1000/3600.0<9){
+               tCheckService.updateEnd(tCheck);
+               TRecord tRecord=new TRecord();
+               tRecord.setRecordDate(tCheck.getcEnd());
+               tRecord.setRecordReason("矿工");
+               tRecord.setsId(tCheck.getsId());
+               tRecord.setRecordMoney(-tStaff.getsMoney());
+               tRecordService.add(tRecord);
+               session.setAttribute("night",tCheck);
+           }
        }
        return "todayTimeRecord";
    }
+   @RequestMapping("selfTimeRecord")
+    public String selfTimeRecord(HttpSession session){
+        TStaff tStaff= (TStaff) session.getAttribute("staff");
+       System.out.println(tStaff);
+        TCheck tCheck=new TCheck();
+        tCheck.setsId(tStaff.getsId());
+      List<TCheck> list=tCheckService.all(tCheck);
+       System.out.println(list);
+        session.setAttribute("allCheck",list);
+        return "myselfRecord";
+   }
+    @RequestMapping("rewardAndPunishment")
+    public String rewardAndPunishment(HttpSession session){
+        TStaff tStaff= (TStaff) session.getAttribute("staff");
+        System.out.println(tStaff);
+        TRecord tRecord=new TRecord();
+        tRecord.setsId(tStaff.getsId());
+        System.out.println(tRecord);
+        List<TRecord> list=tRecordService.getAllBySid(tRecord);
+        System.out.println(list);
+        session.setAttribute("allRecord1",list);
+        return "myselfRewardAndPunishment";
+    }
+//    @RequestMapping("postDisAgree")
+//    public String postDisAgree(HttpSession session){
+//
+//    }
 }
